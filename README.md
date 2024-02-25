@@ -13,6 +13,15 @@
 
 ### 🤖 Commands
 1. `$help` - Shows list of all available commands
+2. `$serverlist` - Shows list of servers your Bot is in
+3. `$nuke` - Nukes the server, deleting all channels and creating new ones, while mass pinging
+4. `$rolespam` - Spams max roles in the server
+5. `$guildname <desired_name>` - Changes the server's name to the name you want
+6. `$banall` - Bans all members without permissions
+7. `$kickall` - Kicks all members without permissions
+8. `$delroles` - Deletes roles in the server
+9. `$give` - Gives everyone in the server administrator permissions
+10. `$giveme <server_id>` - Gives you permissions in specified server
 
 ---
 
