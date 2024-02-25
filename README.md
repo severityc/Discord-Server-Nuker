@@ -10,7 +10,7 @@
 4. Run `main.py`
 
 <ul>
-  <li><b>(You can use Visual Studio Code for the best experience via <a href="https://github.com/codespaces">codespaces</a> or <a href="https://code.visualstudio.com/">on computer</a></b></li>
+  <li><b>You can use Visual Studio Code for the best experience via <a href="https://github.com/codespaces">codespaces</a> or <a href="https://code.visualstudio.com/">on computer</a></b></li>
 </ul>
 
 ---
