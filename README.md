@@ -5,7 +5,7 @@
 
 ### ⚙️ Installation
 1. Install [Python 3.11.6](https://www.python.org/downloads/release/python-3116/) and make sure to add it to path
-2. Run `pip install -r requirements` in the path of the folder
+2. Run `pip install -r requirements.txt` in the path of the folder
 3. Replace `YOUR_BOT_TOKEN` in `config.json` with your Discord bot token
 4. Run `main.py`
 
