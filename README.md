@@ -11,6 +11,11 @@
 
 ---
 
+### 📄 Features
+1. `token_to_id.py` - Enter the token and it will output the id you can use [here](https://discordapi.com/permissions.html) to add the bot to your server if the token isn't yours
+
+---
+
 ### 🤖 Commands
 1. `$help` - Shows list of all available commands
 2. `$serverlist` - Shows list of servers your Bot is in
