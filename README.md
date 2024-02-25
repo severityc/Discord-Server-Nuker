@@ -9,6 +9,10 @@
 3. Replace `YOUR_BOT_TOKEN` in `config.json` with your Discord bot token
 4. Run `main.py`
 
+<ul>
+  <li><b>(You can use Visual Studio Code for the best experience via [codespace](https://github.com/codespaces) or [computer](https://code.visualstudio.com/)</b></li>
+</ul>
+
 ---
 
 ### 📄 Features
