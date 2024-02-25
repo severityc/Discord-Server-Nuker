@@ -1,14 +1,18 @@
-import discord, os
+import discord
+import os
+import json
 from discord.ext import commands
 import asyncio
 from colorama import Fore
 
-intents = discord.Intents.default()
-intents.guilds = True
-intents.message_content = True
+with open('config.json', 'r') as f:
+    config = json.load(f)
+    TOKEN = config['token']
+
+
+intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="$", intents=discord.Intents.all())
-intents.typing = False  
-intents.presences = False
+
 
 @bot.event
 async def on_ready():
@@ -220,4 +224,4 @@ async def giveme(ctx, server_id: int):
 
 
 
-bot.run("YOUR_BOT_TOKEN")
+bot.run(token)
