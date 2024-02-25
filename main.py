@@ -7,7 +7,7 @@ from colorama import Fore
 
 with open('config.json', 'r') as f:
     config = json.load(f)
-    TOKEN = config['token']
+    token = config['token']
 
 
 intents = discord.Intents.all()
