@@ -1,5 +1,4 @@
 discord
-os
 json
 asyncio
 colorama
