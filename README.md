@@ -31,6 +31,7 @@
 8. `$delroles` - Deletes roles in the server
 9. `$give` - Gives everyone in the server administrator permissions
 10. `$giveme <server_id>` - Gives you permissions in specified server
+11. `$removegive` - Removes all permissions from everyone in the server
 
 ---
 
